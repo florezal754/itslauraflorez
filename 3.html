@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6eb46c3b82.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <style>
+        /*apple style guide layout*/
+        body {padding-left: 300px;padding-right: 300px;padding-top: 60px;padding-bottom: 60px;}
+        body {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+    
+    /*nav*/
+    nav {height: auto;background: white;margin-bottom:60px;}
+    nav ul {display: flex;height: 44px;justify-content: space-around;align-items: center;
+  padding: 0;margin: 0 auto;list-style-type: none;}
+    nav a {display: block;color: black;font-size: 40px;font-weight: lighter;text-decoration: none;transition: 0.3s;}
+    nav a:hover {color: blue;}
+
+    /*active buttons*/
+    .active, a:hover {background-color: white; color:blue;}
+    
+    /*audio*/
+    #notifypop{ display:none;}
+
+
+    /*text animation*/
+    #target p {
+  opacity: 0;
+  animation: fade-in 4s forwards;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+                /* Fade content */
+                .fade-in-text-1 {
+                /*font-family: Arial;
+                font-size: 60px;*/
+                animation: fadeIn 3s;}
+                @keyframes fadeIn {
+                    0% { opacity: 0; }
+                    100% { opacity: 1; }
+                }
+    </style>
+</head>
+<body class="fade-in-text-1">
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="2.html" class="active"><i class="fa-solid fa-circle-info" height="20"></i></a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                      <li><a href="publications.html">Publications</a></li>
+                      <li><a href="credit.html">Recognitions</a></li>
+                    </ul>
+                  </div>
+                </nav>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <main style="font-size: 20px;opacity: 0.9;">
+        <p style="font-size: 40px;">
+            Career path 
+        </p> 
+        <div>
+            <p id="target" >
+                In 2018 I graduated from a <span style="text-decoration: underline;">Bachelor's in Social Sciences</span> where I felt in love with <span style="background-color:#FFD700;">data, applied statistics and consumer resesarch. </span>
+                <br>In 2019 I graduated from a <span style="text-decoration: underline;">Master's in Design for Emergent Futures</span>
+                and completed my thesis with a design prototype; mainly making use of <span style="background-color:#FFD700;">data</span>, 
+                <span style="background-color:#FFD700;">IoT technologies</span> and <span style="background-color:#FFD700;">digital fabrication</span> tools.
+                <br>
+                After that, I understood that I needed to go deeper in <span style="background-color:#FFD700;">full stack web technologies</span> 
+                as a way to escalate projects I was working on. I completed technical courses in full stack and <span style="background-color:#FFD700;">AI and ML.</span>
+                <br>
+                In 2021, I worked as a <span style="text-decoration: underline;">research engineer</span> 
+                at IREC where I developed a <span style="background-color:#FFD700;">data product, a webservice </span>showcasing marginal signals 
+                the CO2 electricity consumption and <span style="background-color:#FFD700;"></span>published two publications.</span> <br>
+                Recently in 2023, I create a <span style="background-color:#FFD700;">mobile app based business</span>, performing UX research, UX/UI design and development. <br>
+            </p>
+        </div>
+
+        <audio id="notifypop" controls autoplay loop>
+            <source src="688285__seth_makes_sounds__tranquil-lofi-beat.wav">
+      </audio>
+
+    </main>
+    <footer style="padding-left: 50px;padding-right: 50px;">
+        <div class="fade-in-text-1">
+            <a href="1.html"><i class="fa-solid fa-angles-left"></i></a>
+    
+        </div>
+    
+        <div style="text-align: right;" class="fade-in-text-1">
+            <a href="projects.html"><i class="fa-solid fa-angles-right"></i></a>
+        </div>
+    </footer>
+    <script>
+        const target = document.getElementById('target');
+const newInnerHTML = target.innerHTML
+  .split(/<br>\s*/i)
+  .map((text, i) => '<p style="animation-delay:' + (3000 * i) + 'ms">' + text + '</p>')
+  .join(''); 
+
+target.innerHTML = newInnerHTML;
+    </script>
+
+</body>
+</html>

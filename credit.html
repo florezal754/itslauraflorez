@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/6eb46c3b82.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <style>
+        /*apple style guide layout*/
+        body {padding-left: 300px;padding-right: 300px;padding-top: 60px;padding-bottom: 60px;}
+        body {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+    
+    /*nav*/
+    nav {height: auto;background: white;margin-bottom:40px;}
+    nav ul {display: flex;height: 44px;justify-content: space-around;align-items: center;
+  padding: 0;margin: 0 auto;list-style-type: none;}
+    nav a {display: block;color: black;font-size: 40px;font-weight: lighter;text-decoration: none;transition: 0.3s;}
+    nav a:hover {color: blue;}
+
+    /*active buttons*/
+    .active, a:hover {background-color: white; color:blue;}
+    
+        /*audio*/
+        #notifypop{ display:none;}
+
+
+        .justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+                /* Fade content */
+                .fade-in-text-1 {
+                /*font-family: Arial;
+                font-size: 60px;*/
+                animation: fadeIn 3s;}
+                @keyframes fadeIn {
+                    0% { opacity: 0; }
+                    100% { opacity: 1; }
+                }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="3.html"><i class="fa-solid fa-circle-info" height="20"></i></a></li>
+                    <li><a href="projects.html" >Projects</a></li>
+                      <li><a href="publications.html">Publications</a></li>
+                      <li><a href="credit.html" class="active">Recognitions</a></li>
+                    </ul>
+                  </div>
+                </nav>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <main style="font-size: 20px;opacity: 0.9;" >
+        <audio id="notifypop" controls autoplay loop>
+            <source src="700896__younoise__cosmic-ray-ambient.wav">
+      </audio>
+
+      <p style="font-size: 40px;">
+        Recognitions and/or interest of work 
+    </p> 
+    <div class="justify">
+        <p>
+            <b>Cultural Initiatives and art residency at Fabra i Coats (Barcelona, 2023).</b>
+            Her entrepreneurship and project related to the cultural and creative sector has been selected by the Commission of project selection of
+            the open call “Cultural initiatives” to attend the fabric of creation. 
+        </p>
+        <p>
+            <b>Selection to develop innovative entrepreneurship projects at Tecnocampus (Tecnocampus
+                Mataró, 2023).</b>  She was selected to participate in a programme to research, initiate, plan and launch
+                innovative proposals working with technology and social impact.
+        </p>
+        <p>
+            <b>4FYN startups 8.1 stage at the MWC 2023 (Barcelona, 2023).</b>
+            Her UI/UX proposal was selected as winner of the contest "Le Wagon UX/UI projects".
+        </p>
+        <p>
+            <b>Art residency for NES artists in residence at Skagaströnd (Iceland, 2022).</b>
+            She has shown her work in a group exhibition at the end of her NES residency in Skagaströnd (Iceland, 2022). The work
+            she developed questioned if research could be art, the NFT speculation in art practice, the role of
+            decentralized and emerging technologies in art, the meaning of art for artists, and their perspectives on
+            the meaning of artistic practice in society.
+        </p>
+        <p>
+            <b>Selection for the development of an artistic project MUSAC (León, 2020).</b>
+            She was selected to participate in a short programme to develop a project with recognized artist.
+        </p>
+    </div>
+       
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>

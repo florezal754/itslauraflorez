@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/6eb46c3b82.js" crossorigin="anonymous"></script>
+
+    <title>Document</title>
+    <style>
+        .button {
+  border: 0.2px solid black;
+  min-width: 150px;
+  background-color: transparent;
+  padding: 5px 21px;
+  -webkit-border-radius: 16px;
+  -moz-border-radius: 16px;
+  border-radius: 16px;
+  color: black;
+  font-size: 10px;
+  text-decoration: none;
+  vertical-align: middle;
+  letter-spacing: 1px;
+  }
+.button:hover {
+   background: transparent;
+}
+.button::after {
+   content: " Contact";
+ }
+ 
+ .button:hover::after {
+    content: " itslauraflorez@gmail.com";
+ }
+
+.button:active {
+  background: black;
+ }
+ .button:active::after {
+   background: black;
+ }
+
+ /*Readmore only with CSS*/
+#wrap p {text-indent: 30px;line-height: 1em;}
+.readmore {max-height: 2em;overflow: hidden;color: rgba(0,0,0,.6);transition: all .5s;}
+.readmore::before {content: "Abstract ...";font-weight: 600;color: initial;}
+.readmore:hover {color: initial;max-height: 100vh;overflow: initial;text-indent: 30px;}
+.readmore:hover::before {content: "";}
+.next {width: 100%;background-color: pink;}
+.next a {float: right;text-decoration: none;background-color: orange;color: white;padding: 8px 16px;border-radius: 5px;}
+
+
+/*style from others */
+        /*apple style guide layout*/
+        body {padding-left: 300px;padding-right: 300px;padding-top: 60px;padding-bottom: 60px;}
+        body {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+    
+    /*nav*/
+    nav {height: auto;background: white;margin-bottom:40px;}
+    nav ul {display: flex;height: 44px;justify-content: space-around;align-items: center;
+  padding: 0;margin: 0 auto;list-style-type: none;}
+    nav a {display: block;color: black;font-size: 40px;font-weight: lighter;text-decoration: none;transition: 0.3s;}
+    nav a:hover {color: blue;}
+
+    /*active buttons*/
+    .active, a:hover {background-color: white; color:blue;}
+
+    a {color: black;font-size: 30px;font-weight:bold;text-decoration: none;transition: 0.3s;}
+
+    .justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+    
+    /*audio*/
+    #notifypop{ display:none;}
+
+                    /* Fade content */
+                    .fade-in-text-1 {
+                /*font-family: Arial;
+                font-size: 60px;*/
+                animation: fadeIn 3s;}
+                @keyframes fadeIn {
+                    0% { opacity: 0; }
+                    100% { opacity: 1; }
+                }
+    </style>
+</head>
+<body >
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="3.html"><i class="fa-solid fa-circle-info" height="20"></i></a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                      <li><a href="publications.html" class="active">Publications</a></li>
+                      <li><a href="credit.html">Recognitions</a></li>
+                    </ul>
+                  </div>
+                </nav>
+            </div>
+        </nav>
+    </header>
+    <hr>
+    <main>
+        <audio id="notifypop" controls autoplay loop>
+            <source src="700896__younoise__cosmic-ray-ambient.wav">
+      </audio>
+        <p style="font-size: 40px;">
+            Scientific 
+        </p> 
+
+        <div style="font-size: 25px;">
+
+            <div id="wrap">
+                <a href="https://www.sciencedirect.com/science/article/abs/pii/S0378778823004437?via%3Dihub" target="_blank">Hourly based methods to assess carbon footprint flexibility and primary energy use in
+                    decarbonized buildings</a> <br>
+                <span style="color:grey;">2023, Energy and Buildings</span> <br>
+                <div class="readmore">
+                    <p style="font-size: 20px;" class="justify">
+                        Constant emission factors to assess the carbon footprint of buildings energy use, 
+                        as usually included in national Building Technical Codes, show their limitations since 
+                        the electrical grid mix changes constantly. For this reason, hourly-based methods using 
+                        time-varying penalty signals to calculate carbon emissions and primary energy use in 
+                        buildings constitute more effective assessment methods, especially with the aim 
+                        to activate energy flexibility in buildings based on those inputs. Such signals have been developed and tested in the present work. The robustness and effectiveness of the methods is tested throughout two study cases. The first case compares the impact of using hourly signals over constant factors from the standards. For that purpose, a measured aggregated consumption profile corresponding to 226 real households is analyzed. In the second study case, demand response is implemented through control strategies reacting to the hourly penalty signals, aiming to decrease the emissions, primary energy use and cost. Results for the first case reveal that hourly rates better capture the variability of the electric grid compared to constant yearly factors from national standards, with a 50% difference in carbon emissions and a 20% overestimation with primary energy. Results from the second study case show how the implemented modulation strategies offer benefits in the flexible scenarios compared to the base scenarios, in terms of accumulated emissions or primary energy. Improvements are especially perceived when splitting data seasonally and considering periods with higher demand. Furthermore, this study provides insights for developing energy flexibility inputs when assessing the building performance during critical events such as the COVID19 pandemic or extreme weather conditions, where hourly and seasonal variation might have greater impact. Demand response mechanisms as energy flexibility strategies studied through this work might help in the reduction of total emissions and primary energy. Depending if the goal is to shift the demand due to environmental or economical reasons, different modulation strategies can be implemented to reach greater benefits.
+
+</p>
+                </div>
+            </div>
+            <br>
+            <div id="wrap">
+                <a href="http://dspace.aeipro.com/xmlui/handle/123456789/3271" target="_blank">Marginal emissions and primary energy from the electricity grid to activate demand
+                    management: COVID19 as a case study</a> <br>
+                <span style="color:grey;">2022, 26th International Congress on Project Management and Engineering</span> <br>
+                <div class="readmore">
+                    <p style="font-size: 20px;" class="justify">
+                        The construction of Marginal Emissions Factor (MEF) and Marginal Primary Energy Factor (MPEF) time series of the electricity grid can be used as an effective method to activate demand-side strategies in buildings and thus reducing their carbon footprint and primary energy use. The robustness of a method to calculate MEF and MPEF in function of the load and the share of renewables of the power grid is tested in the present work. The construction of the MEF and MPEF signals is applied to historical and pandemic data sets to investigate potential differences. A specific analysis in the period of the COVID-19. Daily profiles of the marginal and average emissions and primary energy during pandemic are compared with the pre-pandemic period. Preliminary results show that the full pandemic caused a reduced electricity demand by 13% with a reduction of overall assocaited MEF and MPEF of 50% and 35% respectively. Robustness of the methodology is measured by an average year correlation being 85% for pre-pandemic period, whereas pandemic periods reach about 70%. Demand response strategies as activated by the marginal signals can be used to reduce the carbon footprint and primary energy use of the built environment.
+Keywords: Grid Emissions; Primary Energy Use; COVID19 ; Marginal Emissions Factor; Marginal Primary Energy Factor; Demand-side Management
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <br>
+   <!--<footer>
+        <small id="hide" class="center-down" style="font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif">
+
+        <div class="myDIV">
+            <form method="post" action="mailto:itslauraflorez@gmail.com?subject=related-digital-portfolio" >
+                <button class="button" type="submit" name=""><i class="fa fa-envelope"></i></button>
+            </form></small>
+        </div>
+        <div class="hide">
+
+        </div>
+    </footer>-->
+
+<script>
+</script>
+
+</body>
+</html>
