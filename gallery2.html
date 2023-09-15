@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://kit.fontawesome.com/6eb46c3b82.js" crossorigin="anonymous"></script>
+
+<style>
+
+
+
+            /*apple style guide layout*/
+            body {padding-left: 300px;padding-right: 300px;padding-top: 60px;padding-bottom: 60px;}
+        body {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+
+        /*apple style guide layout*/
+        body {padding-left: 300px;padding-right: 300px;padding-top: 60px;padding-bottom: 60px;}
+        body {font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;}
+    
+    /*nav*/
+    nav {height: auto;background: white;margin-bottom:40px;}
+    nav ul {display: flex;height: 44px;justify-content: space-around;align-items: center;
+  padding: 0;margin: 0 auto;list-style-type: none;}
+    nav a {display: block;color: black;font-size: 40px;font-weight: lighter;text-decoration: none;transition: 0.3s;}
+    nav a:hover {color: blue;}
+
+
+
+        div.scroll-container {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+  padding: 10px;
+}
+
+div.scroll-container img {
+  padding: 10px;
+}
+
+
+    /*nav*/
+    nav {height: auto;background: white;margin-bottom:40px;}
+    nav ul {display: flex;height: 44px;justify-content: space-around;align-items: center;
+  padding: 0;margin: 0 auto;list-style-type: none;}
+    nav a {display: block;color: black;font-size: 40px;font-weight: lighter;text-decoration: none;transition: 0.3s;}
+    nav a:hover {color: blue;}
+
+    /*active buttons*/
+    .active, a:hover {background-color: white; color:blue;}
+
+    a {color: black;font-size: 30px;font-weight:bold;text-decoration: none;transition: 0.3s;}
+
+    .justify {
+  text-align: justify;
+  text-justify: inter-word;
+}
+    
+    /*audio*/
+    #notifypop{ display:none;}
+</style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div>
+                <ul>
+                    <li><a href="2.html"><i class="fa-solid fa-circle-info" height="20"></i></a></li>
+                    <li><a href="gallery2.html" class="active">Projects</a></li>
+                      <li><a href="publications.html">Publications</a></li>
+                      <li><a href="credit.html">Recognitions</a></li>
+                    </ul>
+                  </div>
+                </nav>
+            </div>
+        </nav>
+    </header>
+    <main>
+
+        <audio id="notifypop" controls autoplay loop>
+            <source src="700896__younoise__cosmic-ray-ambient.wav">
+      </audio>
+
+      <p style="font-size: 40px;">
+        Selected works
+    </p> 
+
+        <div class="scroll-container">
+                <a href="works_LP.html" target="_blank">
+                    <img src="LP.jpg" alt="Northern Lights" width="600" height="350">
+                </a>
+                <a href="works_IREC.html" target="_blank">
+                    <img src="mockMS2.jpg" alt="Cinque Terre" width="600" height="400">
+                </a>
+
+            <a href="works_FN.html" target="_blank">
+
+                <img src="FN.jpg" alt="Forest" width="600" height="400">
+            </a>
+
+        </div>
+        
+    </main>
+    <footer>
+
+    </footer>
+
+
+
+</body>
+</html>
